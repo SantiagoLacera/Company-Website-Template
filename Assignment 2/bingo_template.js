@@ -72,17 +72,18 @@ $(document).ready(function () {
     //      global variable base added to a randomly selected number in the
     //      range of 1 - 15
     number =  base + Math.floor(Math.random() * 15) + 1;
-    usedArray[i] = number;
+    
 
     // TODO Write an if condition that checks if the randomly generated number
     //      has not been used
-    if (number != usedArray[i - 1]) {
+    if (usedArray[number] != true) {
       // the jQuery updates the HTML tag element with id "cell#"
       // where the # is the random number!
       $("#cell" + i).html(number);
 
       // TODO update the used number array setting the location in the array
       //      to true to indicate that the value has been used
+      usedArray[number] = true;
 
       // set the background and text color for new game
       var id = "cell" + i;

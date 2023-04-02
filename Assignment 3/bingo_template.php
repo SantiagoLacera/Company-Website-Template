@@ -33,12 +33,12 @@
                 $("table tr").each(function()
                 {
                     // Increment variable row by 1
-                    row++;
+                    $row++;
                     // Declare variable currentRow set equal to jQuery selector $(this)
                     $currentRow = $(this);
                     // if it row 2, then it is the middle
                     // Reference the currentRow, append function find(), pass as an argument "td:eq(2)", append function call text(), pass as an argument "FREE"
-                    if (row == 2)
+                    if ($row == 2)
                     {
                         $currentRow.find("td:eq(2)").text("FREE");
                     }

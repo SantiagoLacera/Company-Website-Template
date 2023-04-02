@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+    <style>
+            <?php include 'bingo.css'; ?>
+        </style>
+        <script type="text/javascript" src="jquery-2.1.0.js"></script>
     </head>
     <body>    
         <?php
